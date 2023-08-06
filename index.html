@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link rel="icon" href="./images/OIP.jpg">
+    
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body class="mb-5">
+    <!-- <section>
+      <div class="bg-primary w-full h-48 flex">
+        <div class="text-white font-bold text-9xl flex items-center justify-center ml-20 ">STICKY NOTES</div>
+
+      </div>
+        
+    </section> -->
+
+    <section>
+      <div
+        class="flex justify-between lg:max-w-7xl md:max-w-3xl sm:max-w-xs mx-auto pt-16 lg:flex-row md:flex-row sm:flex-col sm:content-between"
+      >
+        <div class="text-4xl sm:text-2xl sm:pb-4 font-bold">My Notes</div>
+        <button
+          id="openModalButton"
+          class="bg-primary flex items-center rounded-full px-5 py-5 hover:bg-primary2 focus:outline-ash focus:outline-8 disabled:bg-disabled add-button "
+        >
+          <div class="flex justify-center   ">
+            <svg
+              widt
+              h="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="vuesax/outline/add">
+                <g id="add">
+                  <path
+                    id="Vector"
+                    d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
+                    fill="white"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                    fill="white"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <p class="text-white">Add a new note</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <div>
+      <div
+        class="grid gap-y-4 gap-x-4 lg:grid-cols-4 lg:grid-rows-2 place-items-center pt-7 mx-auto lg:max-w-fit md:max-w-fit md:grid-cols-3 md:grid-rows-4 sm:grid-cols-1 text-base "
+      >
+        <div
+          class="bg-yellow rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40"
+        >
+          <div class="items-center">
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div class="">
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-pink rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey" >Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-green rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-peach rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-pink rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-peach rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-yellow rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-green rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-green lg:hidden sm:hidden md:block md:rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-green lg:hidden sm:hidden md:block md:rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-pink lg:hidden sm:hidden md:block md:rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-yellow lg:hidden sm:hidden md:block md:rounded-xl lg:w-80 lg:h-80 md:w-60 md:h-60 p-6 sm:w-[358px] h-40 sm:pb-6"
+        >
+          <div>
+            <div class="lg:pb-36 md:pb-12 sm:pb-4">
+              This is the beginning of mastering CSS, take you time to follow
+              all the tasks; see you on the other side of greatness.
+            </div>
+            <div class="flex justify-between">
+              <div class="text-grey">Dec 14, 2022</div>
+              <div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/brush.png" alt="" />
+                </div>
+                <div
+                  class="w-8 h-8 p-2 rounded-lg border  border-grey justify-start items-start gap-2 inline-flex"
+                >
+                  <img src="./images/trash.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="modalWrapper"
+          class="modal-wrapper hidden fixed left-0 top-0 w-full h-full  flex items-center justify-center z-30 backdrop-blur-sm"
+        >
+          <div
+            class="modal-content bg-white p-8 rounded-lg shadow-lg lg:w-[526px] lg:h-[327px]  md:w-[526px] md:h-[327px] sm:w-[358px] sm:h-72"
+          >
+            <div class="flex justify-between">
+              <h2 class="text-xl font-bold mb-4">Add a new note</h2>
+              <span
+                id="closeModalButton"
+                class="close-modal text-black text-2xl font-normal r"
+                ><img src="./images/Close icon.jpg" alt="close"
+              /></span>
+            </div>
+            <textarea
+              id="textInput"
+              rows="4"
+              class="lg:w-[462px] lg:h-[148px] md:w-[462px] md:h-[148px] sm:w-72 sm:h-28 resize-vertical rounded-lg mb-4 outline outline-1 outline-ash italic focus:outline-black p-4"
+              placeholder="Type your text here..."
+            ></textarea>
+
+
+          <div class="flex justify-end">
+            <button
+              id="saveButton"
+              class="bg-primary flex items-center rounded-full px-5 py-5  hover:bg-primary2 focus:outline-ash focus:outline-8 disabled:bg-disabled"
+            >
+              <div class="sm:flex sm:justify-center">
+                <svg
+                  widt
+                  h="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="vuesax/outline/add">
+                    <g id="add">
+                      <path
+                        id="Vector"
+                        d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
+                        fill="white"
+                      />
+                      <path
+                        id="Vector_2"
+                        d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                        fill="white"
+                      />
+                    </g>
+                  </g>
+                </svg>
+
+                <p class="text-white">Add a new note</p>
+              </div>
+          
+            </button>
+          </div>
+          </div>
+        </div>
+
+
+        <div id="successModal" class="success-modal hidden fixed lg:left-50 lg:top-50 md:left-50 md:top-80 sm:left-50 sm:top-80 w-[421px] h-[327px] flex items-center justify-center z-30  ">
+          <div class="modal-content bg-white p-8 rounded shadow-lg max-w-md">
+            
+            <img src="./images/8ff9b28ed7b6e6aaf523da261a2fcf65.gif" alt="" class="w-48 h-48 mx-auto">
+
+            <h2 class="text-xl font-bold mb-4">Note added successfully</h2>
+            
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
