@@ -1,5 +1,6 @@
 # Sticky-Notes
 12am 8/8/23
+###
 This a responsive sticky notes site i built using html, css(tailwind) and javascript.
 I hit a blocker with the responsiveness but figured it out for the most part.
 for the modal, i used information and code i got from w3schools and chat gpt to achieve desired result.
